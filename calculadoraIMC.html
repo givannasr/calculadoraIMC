@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora IMC</title>
-    <link rel="stylesheet" href="calculadora.css">
+    <link rel="stylesheet" href="calculadoraIMC.css">
 </head>
 <body>
     <div id="boasVindas">
@@ -25,16 +25,42 @@
     </div>
 
     <form onsubmit="return calcular(event)">
+        <h2>informação da primeira pessoa</h2>
+        <label>Digite seu nome:</label><br><br>
+        <input type="text" name="nome1" id="nome1" /><br><br>
+
         <label>Digite seu peso:</label><br><br>
-        <input type="text" nome="peso" id="peso" placeholder="Exemplo: 65" /><br><br>
+        <input type="text" name="peso1" id="peso1" placeholder="Exemplo: 65" /><br><br>
 
         <label>Digite sua altura</label><br><br>
-        <input type="text" nome="altura" id="altura" placeholder="Exemplo: 1.90" /><br><br>
+        <input type="text" name="altura1" id="altura1" placeholder="Exemplo: 1.90" /><br><br>
+
+        <h2>informação da segunda pessoa</h2>
+        <label>Digite seu nome:</label><br><br>
+        <input type="text" name="nome2" id="nome2" /><br><br>
+
+        <label>Digite seu peso:</label><br><br>
+        <input type="text" name="peso2" id="peso2" placeholder="Exemplo: 65" /><br><br>
+
+        <label>Digite sua altura</label><br><br>
+        <input type="text" name="altura2" id="altura2" placeholder="Exemplo: 1.90" /><br><br>
+
+        <h2>informação da terceira pessoa</h2>
+        <label>Digite seu nome:</label><br><br>
+        <input type="text" name="nome3" id="nome3" /><br><br>
+
+        <label>Digite seu peso:</label><br><br>
+        <input type="text" name="peso3" id="peso3" placeholder="Exemplo: 65" /><br><br>
+
+        <label>Digite sua altura</label><br><br>
+        <input type="text" name="altura3" id="altura3" placeholder="Exemplo: 1.90" /><br><br>
 
         <input type="submit" value="Calcular IMC">
     </form>
 
-    <div id="resultado"></div>
+    <div id="resultado1"></div>
+    <div id="resultado2"></div>
+    <div id="resultado3"></div>
 
     <script src="calculadoraIMC.js"></script>
 </body>
